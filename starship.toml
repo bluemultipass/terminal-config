@@ -1,0 +1,39 @@
+# goes in ~/.config/starship.toml
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Basic prompt layout (Left Side)
+# Removed git modules from here
+format = """
+$username\
+$hostname\
+$directory\
+$character\
+"""
+
+# Right-hand prompt layout
+# Added git modules here
+right_format = """
+$git_branch\
+$git_status\
+"""
+
+# Configure the Vi Mode Indicator
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold blue)"
+vimcmd_visual_symbol = "[❮](bold yellow)"
+vimcmd_replace_symbol = "[❮](bold purple)"
+
+[directory]
+truncation_length = 3
+style = "bold cyan"
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[git_status]
+style = "bold red"
