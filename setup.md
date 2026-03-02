@@ -6,4 +6,5 @@ git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-$HOME}/.a
 
 # Create the config files
 touch ~/.zsh_plugins.txt
+
 mkdir -p ~/.config && touch ~/.config/starship.toml
