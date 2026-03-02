@@ -13,11 +13,21 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 # --- 3. Antidote Plugin Loader ---
 # (This handles compinit, so you don't have to!)
 source ~/.antidote/antidote.zsh
-antidote load
+antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
+
+# Wire the Up/Down arrows to the "Smart Search" plugin
+bindkey '^[[A' history-substring-search-up
+bindkey '^[OA' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey '^[OB' history-substring-search-down
 
 # --- 4. Personal Aliases ---
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias sublime=subl
+
+alias gps='git push origin'
+alias gpl='git pull origin'
 
 # --- 5. Prompt (Starship) ---
 eval "$(starship init zsh)"
