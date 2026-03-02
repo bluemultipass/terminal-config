@@ -32,7 +32,8 @@ truncation_length = 3
 style = "bold cyan"
 
 [git_branch]
-symbol = " "
+# \uE0A0 is the hex code for the Powerline branch symbol
+symbol = "\uE0A0 "
 style = "bold purple"
 
 [git_status]
