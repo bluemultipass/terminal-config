@@ -2,7 +2,6 @@
 getantidote/use-omz
 
 # --- Logic & UI Enhancements ---
-jeffreytse/zsh-vi-mode
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-history-substring-search
