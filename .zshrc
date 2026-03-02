@@ -28,6 +28,8 @@ alias sublime=subl
 
 alias gps='git push origin'
 alias gpl='git pull origin'
+alias addCommit="git commit --amend --no-edit"
+alias undoCommit="git reset --soft 'HEAD^'"
 
 # --- 5. Prompt (Starship) ---
 eval "$(starship init zsh)"
