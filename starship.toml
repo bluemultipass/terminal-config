@@ -3,6 +3,8 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+add_newline = false
+
 # Basic prompt layout (Left Side)
 # Removed git modules from here
 format = """
